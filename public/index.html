@@ -34,16 +34,41 @@
         </span>
       </h1>
     </div>
-    <div
-      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
-    >
-      <div class="shrink-0">
-        <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo" />
+
+    <!-- BUTTON AND PSEUDO-CLASSES -->
+    <section class="my-12 flex font-inter">
+      <div class="flex-1 flex">
+        <button
+          class="bg-sky-400 hover:bg-sky-600 font-semibold rounded-full px-4 py-2 w-28 mx-auto block focus:text-white active:font-bold focus:ring-2 focus:ring-sky-200 self-center"
+        >
+          Click
+        </button>
       </div>
-      <div>
-        <div class="text-xl font-medium text-black">ChitChat</div>
-        <p class="text-slate-500">You have a new message!</p>
+      <div
+        class="bg-blue-950 rounded-l-full py-10 pr-8 pl-12 text-center basis-1/2"
+      >
+        <h2 class="block mx-auto mb-4 text-2xl">
+          <span class="text-sky-500"> :active </span>
+          <span
+            class="bg-gradient-to-r from-sky-500 to-orange-500 text-transparent bg-clip-text"
+          >
+            and
+          </span>
+          <span class="text-orange-500"> :focus </span>
+        </h2>
+        <div class="text-2sm text-left text-white">
+          <p>
+            When you click and hold the button is in a state of
+            <span class="text-sky-500"> :active </span> and
+            <span class="font-bold"> font-bold </span> will be apply.
+          </p>
+          <p class="mt-4">
+            When you only click the button is in a state of
+            <span class="text-orange-500"> :focus </span>
+            a ring will apear and notice text and background color change.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
