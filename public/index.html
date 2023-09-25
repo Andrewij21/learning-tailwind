@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css//style.css" />
     <title>Learning Tailwind</title>
   </head>
-  <body>
+  <body class="bg-white">
     <div class="bg-slate-800 w-1/2 h-80 rounded-r-full pt-14">
       <h1 class="text-6xl tracking-wider font-inter">
         <span class="text-teal-200 inline-block"> Hello, </span>
@@ -69,6 +69,43 @@
           </p>
         </div>
       </div>
+    </section>
+
+    <section class="my-12 font-inter">
+      <h2
+        class="text-3xl capitalize text-center font-bold bg-gradient-to-tl from-red-400 to-blue-400 text-transparent bg-clip-text mb-2"
+      >
+        first - last
+      </h2>
+      <ul
+        class="bg-gradient-to-l from-teal-400 pt-5 h-48 flex justify-center hover:to-blue-400 pointer-events-none"
+      >
+        <li
+          class="rounded-t-full pt-20 text-center basis-1/4 text-2xl font-extrabold capitalize text-red-400 group/first hover:bg-white pointer-events-auto"
+        >
+          <span class="border-b-4 border-white">first-child</span>
+          <p
+            class="invisible group-hover/first:visible group-hover/first:text-slate-800 font-bold pb-4"
+          >
+            can effect parent
+          </p>
+        </li>
+        <li
+          class="rounded-t-full pt-20 text-center basis-1/4 text-2xl font-extrabold capitalize text-pink-400 hover:basis-1/2 group/last hover:bg-white pointer-events-auto"
+        >
+          <span class="border-b-4 border-white"> Last-child </span>
+          <p
+            class="invisible group-hover/last:visible text-slate-800 font-bold pb-4"
+          >
+            can effect other child and parent
+          </p>
+        </li>
+        <!-- <li
+          class="rounded-t-full bg-yellow-400 pt-20 text-center basis-1/4 text-xl font-bold capitalize text-slate-800 last:rotate-45 last:origin-bottom-left"
+        >
+          last-child
+        </li> -->
+      </ul>
     </section>
   </body>
 </html>
